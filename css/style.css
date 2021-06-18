@@ -1,0 +1,645 @@
+body{
+    min-width: 320px;
+    margin: 0;
+}
+
+body, html {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+}
+/* button styling */
+.red_Button{
+    background-color: #e50914;
+    line-height: normal;
+    padding: 7px 17px;
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+    border-radius: 3px;
+}
+
+.hero{
+    min-height: 100vh; 
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/c0a32732-b033-43b3-be2a-8fee037a6146/0f28b5b4-261c-4d61-b6ba-1c75f0b7e79e/NG-en-20210607-popsignuptwoweeks-perspective_alpha_website_small.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-size: cover;
+    background-blend-mode: overlay;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 8px solid #222;
+}
+
+
+
+.hero nav {
+    position: relative;
+    margin: 0 3.5rem;
+    height: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero nav .logo{
+    padding-top: .5rem;
+    height: 40px;
+    width: 162px;
+}
+
+.hero nav svg{
+    fill: #e50914;
+    line-height: normal;
+}
+.hero nav .red_Button{
+    background-color: #e50914;
+    line-height: normal;
+    padding: 7px 17px;
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+    border-radius: 3px;
+}
+.hero .show_area{
+    width: 100%;
+    padding: 75px 0;
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
+    padding-bottom:100px;
+}
+
+.hero .show_area .headline{
+    color: #f3f3f3;
+    font-size: 3rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+.hero .show_area h2{
+    color: #f3f3f3;
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.hero .show_area h3{
+    color: #f3f3f3;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 50px;
+}
+.hero .show_area .form_section{
+    margin-top: 20px;
+}
+
+.hero .show_area .form_section input{
+    min-width: 500px;
+    height: 70px!important;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: solid 1px #8c8c8c;
+    border-radius: 2px;
+}
+.hero .show_area .form_section  .red_Button{
+    position: relative;
+    font-size: 1em;
+    padding: 24.5px 2em;
+    min-width: 74px;
+    min-height: 50px;
+    margin: .5em .5em .5em 0;
+    font-weight: 600;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: 1s all ease;
+}
+
+.hero .show_area .form_section  .red_Button:hover{
+    opacity: 0.8;
+}
+
+/* enjoy_tv section */
+.enjoy_tv{
+
+}
+.enjoy_tv .container{
+    position: relative;
+    border-bottom: 8px solid #222;
+    padding: 50px 5%;
+    margin-bottom: 0;
+    background: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.enjoy_tv .description{
+    flex: 1;
+    width: 52%;
+    height: 100%;
+    padding: 0 3rem 0 0;
+    z-index: 3;
+}
+.enjoy_tv .description h1{
+    font-size: 3rem;
+}
+
+.enjoy_tv .description h2{
+    font-size: 1.8rem;
+}
+.enjoy_tv .video {
+    background: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png");
+    background-size: cover;
+    overflow: hidden;
+    padding: 20px;
+    flex: 1;
+    padding: 60px;
+    overflow: hidden;
+    
+}
+.enjoy_tv .video video{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+/* //download cta section */
+.download_tv{
+
+}
+.download_tv  .container{
+    position: relative;
+    border-bottom: 8px solid #222;
+    padding: 50px 5%;
+    margin-bottom: 0;
+    background: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.download_tv  .container .description{
+    flex: 1;
+    width: 52%;
+    height: 100%;
+    padding: 0 3rem 0 0;
+    z-index: 3;
+}
+
+.download_tv .description h1{
+    font-size: 3rem;
+}
+
+.download_tv .description h2{
+    font-size: 1.8rem;
+}
+
+.download_tv .container .imagesection {
+    padding: 20px;
+    flex: 1;
+    padding: 60px;
+    overflow: hidden;
+    
+}
+.download_tv .container .imagesection img{
+    max-width: 100%; 
+}
+
+/* watch everywhere section */
+
+.watch_everywhere{
+
+}
+.watch_everywhere .container{
+    position: relative;
+    border-bottom: 8px solid #222;
+    padding: 50px 5%;
+    margin-bottom: 0;
+    background: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.watch_everywhere .description{
+    flex: 1;
+    width: 52%;
+    height: 100%;
+    padding: 0 3rem 0 0;
+    z-index: 3;
+}
+.watch_everywhere .description h1{
+    font-size: 3rem;
+}
+
+.watch_everywhere .description h2{
+    font-size: 1.8rem;
+}
+.watch_everywhere .video {
+    background: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png");
+    background-size: cover;
+    overflow: hidden;
+    padding: 20px;
+    flex: 1;
+    padding: 60px;
+    overflow: hidden;
+    
+}
+.watch_everywhere .video video{
+    margin: auto;
+    padding-left:15%;
+    max-width: 70%;
+}
+
+/* //create_kids_profile section */
+
+.create_kids_profile{
+
+}
+.create_kids_profile  .container{
+    position: relative;
+    border-bottom: 8px solid #222;
+    padding: 50px 5%;
+    margin-bottom: 0;
+    background: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.create_kids_profile  .container .description{
+    flex: 1;
+    width: 52%;
+    height: 100%;
+    padding: 0 3rem 0 0;
+    z-index: 3;
+}
+
+.create_kids_profile .description h1{
+    font-size: 3rem;
+}
+
+.create_kids_profile .description h2{
+    font-size: 1.8rem;
+}
+
+.create_kids_profile .container .imagesection {
+    padding: 20px;
+    flex: 1;
+    padding: 60px;
+    overflow: hidden;
+    
+}
+.create_kids_profile .container .imagesection img{
+    max-width: 100%; 
+}
+
+/* frequently asked question section */
+.frequent_questions{
+    background: #000;
+}
+.frequent_questions .container{
+    position: relative;
+    border-bottom: 8px solid #222;
+    padding: 50px 5%;
+    margin-bottom: 0;
+    background: black;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: auto;
+    align-items: center;
+}
+
+.frequent_questions .container h1{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.frequent_questions .container .q_box{
+    width: 800px;
+}
+.frequent_questions .container .q_box .question{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #303030;
+    margin-bottom: 2px;
+}
+
+.frequent_questions .container .q_box .question h2{
+    padding: 0px 10px;
+    color: white;
+    font-size: 32px;
+}
+.frequent_questions .container .q_box .question huha{
+    flex: 1;
+    font-size: 32px;
+    font-weight: 100;
+}
+
+.frequent_questions .container .q_box .answer{
+    padding: 20px;
+    background: #303030;
+    color: white;
+    font-size: 20px;
+    display: none;
+    transition: 1s ease-in-out;
+}
+
+.frequent_questions .container .q_box .question:hover + .answer{
+   display: block !important;
+}
+
+.frequent_questions .instruction{
+    margin-top: 50px;
+    font-size: 1.5rem;
+}
+
+.frequent_questions .form_section{
+    margin-top: -10px;
+}
+
+
+.frequent_questions .form_section input{
+    min-width: 500px;
+    height: 70px!important;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: solid 1px #8c8c8c;
+    border-radius: 2px;
+}
+.frequent_questions .form_section  .red_Button{
+    position: relative;
+    font-size: 1em;
+    padding: 24.5px 2em;
+    min-width: 74px;
+    min-height: 50px;
+    margin: .5em .5em .5em 0;
+    font-weight: 600;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: 1s all ease;
+}
+
+.frequent_questions .form_section  .red_Button:hover{
+    opacity: 0.8;
+}
+@media(max-width: 600px){
+    .hero nav {
+        position: relative;
+        margin: 0 1rem;
+        height: 100%;
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hero nav .logo{
+        padding-top: .5rem;
+        height: 20px;
+        width: 81px;
+    }
+
+    .hero nav .red_Button{
+        background-color: #e50914;
+        line-height: normal;
+        padding: 4px 9px;
+        font-weight: 400;
+        font-size: 1rem;
+        color: white;
+        border-radius: 3px;
+    }
+
+    .hero .show_area .headline{
+        color: #f3f3f3;
+        font-size: 2rem;
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .hero .show_area h3{
+        color: #f3f3f3;
+        font-size: 0.8rem;
+        max-width: 800px;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .hero .show_area .form_section input{
+        min-width: 300px;
+        height: 40px!important;
+        box-sizing: border-box;
+        font-size: 16px;
+        border: solid 1px #8c8c8c;
+        border-radius: 2px;
+    }
+
+    .hero .show_area .form_section  .red_Button{
+        position: relative;
+        font-size: 1em;
+        padding: 14.5px 2em;
+        min-width: 74px;
+        min-height: 20px;
+        margin: .5em .5em .5em 0;
+        font-weight: 600;
+        cursor: pointer;
+        box-sizing: border-box;
+        transition: 1s all ease;
+    }
+
+    .enjoy_tv .container{
+        position: relative;
+        border-bottom: 8px solid #222;
+        padding: 30px 2%;
+        margin-bottom: 0;
+        background: black;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .enjoy_tv .description{
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        padding: 10px ;
+        z-index: 3;
+    }
+
+    .enjoy_tv .description h1{
+        font-size: 2.0rem;
+    }
+    
+    .enjoy_tv .description h2{
+        font-size: 0.8rem;
+    }
+
+    .enjoy_tv .video {
+        background: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png");
+        background-size: cover;
+        overflow: hidden;
+        padding: 30px;
+        flex: 1;
+        padding: 60px;
+        overflow: hidden;
+        
+    }
+
+    .download_tv  .container{
+        position: relative;
+        border-bottom: 8px solid #222;
+        padding: 30px 2%;
+        margin-bottom: 0;
+        background: black;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .download_tv  .container .description{
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        z-index: 3;
+    }
+
+    .download_tv .description h1{
+        font-size: 1.8rem;
+    }
+    .download_tv .description h2{
+        font-size: 0.8rem;
+    }
+
+    .download_tv .container .imagesection {
+        padding: 20px;
+        flex: 1;
+        padding: 10px;
+        overflow: hidden;
+        
+    }
+
+    .watch_everywhere .container{
+        position: relative;
+        border-bottom: 8px solid #222;
+        padding: 30px 2%;
+        margin-bottom: 0;
+        background: black;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .watch_everywhere .description{
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        z-index: 3;
+    }
+
+    .watch_everywhere .description h1{
+        font-size: 1.8rem;
+    }
+    .watch_everywhere .description h2{
+        font-size: 0.8rem;
+    }
+    .create_kids_profile  .container{
+        position: relative;
+        border-bottom: 8px solid #222;
+        padding: 30px 2%;
+        margin-bottom: 0;
+        background: black;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .create_kids_profile  .container .description{
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        z-index: 3;
+    }
+
+    .create_kids_profile .description h1{
+        font-size: 1.8rem;
+    }
+    
+    .create_kids_profile .description h2{
+        font-size: 0.8rem;
+    }
+
+    .create_kids_profile .container .imagesection {
+        padding: 20px;
+        flex: 1;
+        padding: 10px;
+        overflow: hidden;
+        
+    }
+
+    .frequent_questions .container{
+        position: relative;
+        border-bottom: 8px solid #222;
+        padding: 10px 5%;
+        margin-bottom: 0;
+        background: black;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 800px;
+        margin: auto;
+        align-items: center;
+    }
+
+    .frequent_questions .container h1{
+        font-size: 1.8rem;
+        font-weight: 900;
+    }
+    
+    .frequent_questions .container .q_box{
+        width: 100%;
+    }
+    .frequent_questions .container .q_box .question h2{
+        padding: 0px 10px;
+        color: white;
+        font-size: 18px;
+    }
+    .frequent_questions .container .q_box .question huha{
+        flex: 1;
+        font-size: 18px;
+        font-weight: 100;
+    }
+
+    .frequent_questions .container .q_box .answer{
+        background: #303030;
+        color: white;
+        font-size: 18px;
+        display: none;
+        transition: 1s ease-in-out;
+    }
+    
+}
